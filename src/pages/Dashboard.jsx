@@ -53,6 +53,26 @@ const Dashboard = () => {
                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors">View your conversation history</p>
               </div>
             </button>
+
+            {/* Mood Analysis Card */}
+            <div className="md:col-span-2 flex justify-center">
+              <button
+                onClick={() => navigate('/mood-analysis')}
+                className="group relative bg-gradient-to-br from-green-600/20 to-green-800/20 backdrop-blur-sm p-8 rounded-2xl border border-green-500/30 hover:border-green-500/60 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20 w-full md:w-1/2"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/0 to-green-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="text-6xl mb-6 transform group-hover:scale-110 transition-transform duration-300">📊</div>
+                  <h2 className="text-3xl font-bold text-white mb-3">Mood Analysis</h2>
+                  <ul className="text-center text-sm text-gray-400 group-hover:text-gray-300 transition-colors space-y-1 list-none">
+                    <li>• Track progress</li>
+                    <li>• Download reports</li>
+                  <li>• Suggest remedies</li>
+                  <li>• Mental health score</li>
+                  </ul>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
